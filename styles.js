@@ -1,0 +1,116 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: "#1b1c1b",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+    },
+    texto: {
+        fontSize: 20,
+        color: "white",
+    },
+    botaoLogin: {
+        height: 50,
+        width: 120,
+        backgroundColor: "#1b1c1b",
+        borderWidth: 2,
+        borderRadius: 10,
+        borderColor: "black",
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    botaoCadastro: {
+        height: 50,
+        width: 120,
+        backgroundColor: "green",
+        borderWidth: 2,
+        borderRadius: 10,
+        borderColor: "black",
+        alignItems: "center",
+        justifyContent: "center",
+        marginLeft: 25,
+    },
+    cabecalho: {
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        height: "20%",
+        backgroundColor: "#02ad21",
+    },
+    barraPesquisa: {
+        borderWidth: 3,
+        borderColor: "black",
+        borderRadius: 5,
+        height: 25,
+        width: "60%",
+        backgroundColor: "#02ad21",
+        margin: 10,
+    },
+    rodape: {
+        backgroundColor: "#02ad21",
+        height: "10%",
+        width: "100%",
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    areaSala: {
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 10,
+        margin: 10,
+    },
+    linhaPreta: {
+        backgroundColor: "black",
+        width: "100%",
+        height: "5%",
+        marginTop: 10,
+    },
+    itemVertical: {
+        backgroundColor: "green",
+        height: 80,
+        width: 120,
+        borderColor: "black",
+        borderWidth: 2,
+        borderRadius: 15,
+        marginHorizontal: 5,
+        alignItems: "center",
+        justifyContent: "center",
+        margin: 5,
+    },
+    scrollContainer: {
+        flexDirection: "row",
+    },
+    mostrarTudo: {
+        color: "green",
+        fontSize: 20,
+    },
+    itemHorizontal: {
+        backgroundColor: "green",
+        height: 120,
+        width: 90,
+        borderColor: "black",
+        borderWidth: 2,
+        borderRadius: 15,
+        marginHorizontal: 5,
+        alignItems: "center",
+        justifyContent: "center",
+        margin: 5,
+    },
+    centralizar: {
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    assinatura: {
+        fontSize: 5,
+        color: "black",
+        marginTop: 3,
+        textAlign: "right",
+    }
+})
+
+export default styles;
