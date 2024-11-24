@@ -8,7 +8,12 @@ const Home = () => {
 
     const navigation = useNavigation();
 
-    const handleSignOut = () => {
+    const irParaCadastro=()=>{
+        navigation.replace("Cadastro");
+    }
+
+    const irParaLogin=()=>{
+        navigation.replace("Login");
     }
 
     const popularItems = ["Teste 1", "Teste 2", "Teste 3", "Teste 4"];
@@ -19,10 +24,10 @@ const Home = () => {
           <View style={styles.cabecalho}>   
             <TextInput style={styles.barraPesquisa}>Digite aqui... </TextInput>
             <View style={{flexDirection: "row"}}>
-            <TouchableOpacity style={styles.botaoLogin}>
+            <TouchableOpacity style={styles.botaoLogin} onPress={irParaLogin}>
                 <Text style={styles.texto}>ENTRAR </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.botaoCadastro}>
+            <TouchableOpacity style={[styles.botaoCadastro, {marginLeft: 25}]} onPress={irParaCadastro}>
                 <Text style={styles.texto}>REGISTRAR </Text>
             </TouchableOpacity>
             </View>
@@ -106,9 +111,8 @@ const Home = () => {
           </View>
           </ScrollView>
 
-
           <View style={styles.rodape}>
-            <Text style={[styles.texto,{fontSize: 30, margin: 1, paddingVertical: 1}]}>Inicio </Text>
+            <Text style={[styles.texto,{fontSize: 30, margin: 1, paddingVertical: 1}]}>INICIO </Text>
             <View style={styles.linhaPreta}></View>
             <Text style={styles.assinatura}>  @Todos os direitos reservados a Jay Marshall  </Text>
           </View>

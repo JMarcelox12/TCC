@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
         borderColor: "black",
         alignItems: "center",
         justifyContent: "center",
-        marginLeft: 25,
     },
     cabecalho: {
         alignItems: "center",
@@ -46,7 +45,7 @@ const styles = StyleSheet.create({
         borderColor: "black",
         borderRadius: 5,
         height: 25,
-        width: "60%",
+        width: "82%",
         backgroundColor: "#02ad21",
         margin: 10,
     },
@@ -83,7 +82,10 @@ const styles = StyleSheet.create({
         margin: 5,
     },
     scrollContainer: {
-        flexDirection: "row",
+        height: "100%",
+        width: "100%",
+        alignContent: "center",
+        alignItems: "center",
     },
     mostrarTudo: {
         color: "green",
@@ -110,7 +112,26 @@ const styles = StyleSheet.create({
         color: "black",
         marginTop: 3,
         textAlign: "right",
+    },
+    boxAuth: {
+        borderWidth: 3,
+        borderRadius: 10,
+        borderColor: "black",
+        backgroundColor: "#1b1c1b",
+        height: 40,
+        width: "90%",
+        margin: 10, 
+        alignItems: "center",
+        justifyContent: "center",
+    },    
+    areaCadastro: {
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 10,
+        margin: 10,
     }
+
 })
 
 export default styles;
