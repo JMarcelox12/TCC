@@ -17,11 +17,17 @@ const Cadastro = () => {
     return(
         <KeyboardAvoidingView style={styles.container}>
             <View style={[styles.cabecalho,{height: "15%", marginBlockEnd: 20}]}>   
-                <Text style={[styles.texto,{fontSize: 30}]}>SITE </Text>
+                <Text style={[styles.texto,{fontSize: 30, color: 'black'}]}>SITE </Text>
             </View>
 
         <ScrollView>
             <View style={[styles.areaCadastro, {alignItems: "flex-start"}]}>
+                <View style={[styles.boxFunction, {alignItems: 'center'}]}>
+                    <Text style={[styles.texto, {color: "black", fontSize: 30}]}>REGISTRO </Text>
+                </View>
+                <View style={[{marginLeft: '16%', padding: 18}]}>
+                <Text style={[styles.texto, {fontSize: 22}]}>CRIE SUA CONTA </Text>
+                </View>
             <Text style={[styles.texto, {marginLeft: 10}]}>Nome </Text>
             <TextInput style={[styles.boxAuth]}></TextInput>
                 <Text style={[styles.texto, {marginLeft: 10}]}>Data de Nascimento </Text>
@@ -53,7 +59,7 @@ const Cadastro = () => {
           </ScrollView>
 
             <View style={styles.rodape}>
-                <Text style={[styles.texto,{fontSize: 30, margin: 1, paddingVertical: 1}]}>CADASTRO </Text>
+                <Text style={[styles.texto,{fontSize: 30, margin: 1, paddingVertical: 1, color: "black"}]}>CADASTRO </Text>
                 <View style={styles.linhaPreta}></View>
                 <Text style={styles.assinatura}>  @Todos os direitos reservados a Jay Marshall  </Text>
             </View>

@@ -112,7 +112,7 @@ const Home = () => {
           </ScrollView>
 
           <View style={styles.rodape}>
-            <Text style={[styles.texto,{fontSize: 30, margin: 1, paddingVertical: 1}]}>INICIO </Text>
+            <Text style={[styles.texto,{fontSize: 30, margin: 1, paddingVertical: 1, color: "black"}]}>INICIO </Text>
             <View style={styles.linhaPreta}></View>
             <Text style={styles.assinatura}>  @Todos os direitos reservados a Jay Marshall  </Text>
           </View>

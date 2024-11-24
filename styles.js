@@ -130,6 +130,16 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         padding: 10,
         margin: 10,
+    },
+    boxFunction:{
+        backgroundColor: "#02ad21",
+        alignItems: "center",
+        justifyContent: "center",
+        height: 50,
+        width: "70%",
+        borderRadius: 10,
+        marginLeft: "13%",
+        marginEnd: 10,  
     }
 
 })
