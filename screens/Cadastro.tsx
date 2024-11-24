@@ -11,60 +11,44 @@ const Cadastro = () => {
 
     const navigation = useNavigation();
 
-    const verificarData = () => {
-    }
-
     const handleSignUp = () => {
     }
 
     return(
         <KeyboardAvoidingView style={styles.container}>
-            <View style={[styles.cabecalho,{height: "10%", marginBlockEnd: 30}]}>   
+            <View style={[styles.cabecalho,{height: "15%", marginBlockEnd: 20}]}>   
                 <Text style={[styles.texto,{fontSize: 30}]}>SITE </Text>
             </View>
 
         <ScrollView>
-            <View style={styles.areaCadastro}>
-                <Text style={styles.texto}>Data de Nascimento </Text>
+            <View style={[styles.areaCadastro, {alignItems: "flex-start"}]}>
+            <Text style={[styles.texto, {marginLeft: 10}]}>Nome </Text>
+            <TextInput style={[styles.boxAuth]}></TextInput>
+                <Text style={[styles.texto, {marginLeft: 10}]}>Data de Nascimento </Text>
+                <TextInput style={[styles.boxAuth, styles.texto]}>99/99/9999 </TextInput>
+                <Text style={[styles.texto, {marginLeft: 10}]}>CPF </Text>
+                <TextInput style={[styles.boxAuth, styles.texto]}>999.999.999-99</TextInput>
+                <Text style={[styles.texto, {marginLeft: 10}]}>Telefone </Text>
+                <TextInput style={[styles.boxAuth, styles.texto]}>99 999999999</TextInput>
+                <Text style={[styles.texto, {marginLeft: 10}]}>Email </Text>
                 <TextInput style={[styles.boxAuth, styles.texto]}></TextInput>
-                <Text style={styles.texto}>CPF </Text>
-                <TextInput style={[styles.boxAuth]}></TextInput>
-                <Text style={styles.texto}>Nome </Text>
-                <TextInput style={[styles.boxAuth]}></TextInput>
-                <Text style={styles.texto}>Email </Text>
+                <Text style={[styles.texto, {marginLeft: 10}]}>Senha </Text>
                 <TextInput style={[styles.boxAuth, styles.texto]}></TextInput>
-                <Text style={styles.texto}>Senha </Text>
+                <Text style={[styles.texto, {marginLeft: 10}]}>Confirme a senha </Text>
                 <TextInput style={[styles.boxAuth, styles.texto]}></TextInput>
-                <Text style={styles.texto}>Senha </Text>
-                <TextInput style={[styles.boxAuth, styles.texto]}></TextInput>
-                <TouchableOpacity style={[styles.botaoCadastro, {width: "90%", margin: 20}]}>
+                <TouchableOpacity style={[styles.botaoCadastro, {width: "90%", margin: 10}]}>
                     <Text style={styles.texto}>REGISTRAR-SE  </Text>
                 </TouchableOpacity>
             </View>
 
             <View style={styles.areaSala}>
             <View style={{flexDirection: "row"}}>
-            <Text style={styles.texto}>Populares </Text>
-            <TouchableOpacity style={{marginLeft: 70}}>
-            <Text style={styles.mostrarTudo}>Mostrar Tudo </Text>
+            <Text style={styles.texto}>JÁ POSSUI UMA CONTA?  </Text>
+            <TouchableOpacity style={styles.centralizar}>
+            <Text style={styles.mostrarTudo}>ENTRAR  </Text>
             </TouchableOpacity>
             </View>
-            <ScrollView horizontal={true}
-                        nestedScrollEnabled={true}
-                        contentContainerStyle={{ paddingHorizontal: 1 }}>
-            <TouchableOpacity style={styles.itemHorizontal}>
-                <Text style={styles.texto}>Teste 1 </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.itemHorizontal}>
-                <Text style={styles.texto}>Teste 2 </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.itemHorizontal}>
-                <Text style={styles.texto}>Teste 3 </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.itemHorizontal}>
-                <Text style={styles.texto}>Teste 4 </Text>
-            </TouchableOpacity>
-            </ScrollView>
+            
           </View>
           </ScrollView>
 
