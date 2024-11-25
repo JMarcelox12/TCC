@@ -39,6 +39,8 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "20%",
         backgroundColor: "#02ad21",
+        flex: 1,
+        marginTop: 0,
     },
     barraPesquisa: {
         borderWidth: 3,
@@ -55,6 +57,8 @@ const styles = StyleSheet.create({
         width: "100%",
         alignItems: "center",
         justifyContent: "center",
+        flex: 1,
+        marginBottom: 0,
     },
     areaSala: {
         flexDirection: "column",
@@ -133,13 +137,13 @@ const styles = StyleSheet.create({
     },
     boxFunction:{
         backgroundColor: "#02ad21",
-        alignItems: "center",
+        alignSelf: "center",
         justifyContent: "center",
         height: 50,
         width: "70%",
         borderRadius: 10,
         marginLeft: "13%",
-        marginEnd: 10,  
+        marginEnd: 10,
     }
 
 })

@@ -8,12 +8,24 @@ const Home = () => {
 
     const navigation = useNavigation();
 
-    const irParaCadastro=()=>{
+    const irParaCadastro = () => {
         navigation.replace("Cadastro");
     }
 
-    const irParaLogin=()=>{
+    const irParaLogin = () => {
         navigation.replace("Login");
+    }
+
+    const mostrarPopulares = () => {
+    }
+
+    const mostrarMelhores = () => {
+    }
+
+    const mostrarAovivo = () => {
+    }
+
+    const irParaSala = () => {
     }
 
     const popularItems = ["Teste 1", "Teste 2", "Teste 3", "Teste 4"];
@@ -37,7 +49,7 @@ const Home = () => {
           <View style={styles.areaSala}>
             <View style={{flexDirection: "row", justifyContent: "space-between"}}>
             <Text style={styles.texto}>Populares </Text>
-            <TouchableOpacity style={{marginLeft: 70}}>
+            <TouchableOpacity style={{marginLeft: 70}} onPress={mostrarPopulares}>
             <Text style={styles.mostrarTudo}>Mostrar Tudo </Text>
             </TouchableOpacity>
             </View>
@@ -62,8 +74,8 @@ const Home = () => {
 
           <View style={styles.areaSala}>
             <View style={{flexDirection: "row"}}>
-            <Text style={styles.texto}>Populares </Text>
-            <TouchableOpacity style={{marginLeft: 70}}>
+            <Text style={styles.texto}>Melhores </Text>
+            <TouchableOpacity style={{marginLeft: 70}} onPress={mostrarMelhores}>
             <Text style={styles.mostrarTudo}>Mostrar Tudo </Text>
             </TouchableOpacity>
             </View>
@@ -87,8 +99,8 @@ const Home = () => {
 
           <View style={styles.areaSala}>
             <View style={{flexDirection: "row"}}>
-            <Text style={styles.texto}>Populares </Text>
-            <TouchableOpacity style={{marginLeft: 70}}>
+            <Text style={styles.texto}>Ao vivo </Text>
+            <TouchableOpacity style={{marginLeft: 70}} onPress={mostrarAovivo}>
             <Text style={styles.mostrarTudo}>Mostrar Tudo </Text>
             </TouchableOpacity>
             </View>

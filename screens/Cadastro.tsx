@@ -14,6 +14,10 @@ const Cadastro = () => {
     const handleSignUp = () => {
     }
 
+    const irParaLogin = () => {
+        navigation.replace("Login");    
+    }
+
     return(
         <KeyboardAvoidingView style={styles.container}>
             <View style={[styles.cabecalho,{height: "15%", marginBlockEnd: 20}]}>   
@@ -25,7 +29,7 @@ const Cadastro = () => {
                 <View style={[styles.boxFunction, {alignItems: 'center'}]}>
                     <Text style={[styles.texto, {color: "black", fontSize: 30}]}>REGISTRO </Text>
                 </View>
-                <View style={[{marginLeft: '16%', padding: 18}]}>
+                <View style={[{marginLeft: 'auto', padding: 18, marginRight: "auto"}]}>
                 <Text style={[styles.texto, {fontSize: 22}]}>CRIE SUA CONTA </Text>
                 </View>
             <Text style={[styles.texto, {marginLeft: 10}]}>Nome </Text>
@@ -42,7 +46,8 @@ const Cadastro = () => {
                 <TextInput style={[styles.boxAuth, styles.texto]}></TextInput>
                 <Text style={[styles.texto, {marginLeft: 10}]}>Confirme a senha </Text>
                 <TextInput style={[styles.boxAuth, styles.texto]}></TextInput>
-                <TouchableOpacity style={[styles.botaoCadastro, {width: "90%", margin: 10}]}>
+                <TouchableOpacity style={[styles.botaoCadastro,
+                     {width: "90%", margin: 10}]} onPress={handleSignUp}>
                     <Text style={styles.texto}>REGISTRAR-SE  </Text>
                 </TouchableOpacity>
             </View>
@@ -50,7 +55,7 @@ const Cadastro = () => {
             <View style={styles.areaSala}>
             <View style={{flexDirection: "row"}}>
             <Text style={styles.texto}>JÁ POSSUI UMA CONTA?  </Text>
-            <TouchableOpacity style={styles.centralizar}>
+            <TouchableOpacity style={styles.centralizar} onPress={irParaLogin}>
             <Text style={styles.mostrarTudo}>ENTRAR  </Text>
             </TouchableOpacity>
             </View>
